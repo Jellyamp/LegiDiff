@@ -22,9 +22,13 @@ namespace LegiDiffUI
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             SetContentView(Resource.Layout.activity_main);
+
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+
             SetSupportActionBar(toolbar);
 
             var floatingActionButton = FindViewById<FloatingActionButton>(Resource.Id.fab);
